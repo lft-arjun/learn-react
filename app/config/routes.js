@@ -1,22 +1,20 @@
-/**
- * Created by linux on 7/7/16.
- */
-
 var React = require('react');
 var ReactRouter = require('react-router');
 var Router = ReactRouter.Router;
-var Route =  ReactRouter.Route;
+var Route = ReactRouter.Route;
+var hashHistory = ReactRouter.hashHistory;
 var IndexRoute = ReactRouter.IndexRoute;
-
 var Main = require('../components/Main');
-var Home = require('../components/Home');
+var Home = require("../components/Home");
+var About = require("../components/About");
 
 var routes = (
-    <Router>
-        <Route path="/" component={Main} >
-            <Route path="/home" component={Home} />
+    <Router history={hashHistory}>
+        <Route path='/' component={Main}>
+            <IndexRoute component={Home} />
+            <Route path='/about' component={About} />
         </Route>
     </Router>
 );
 
-moudule.exports = routes;
+module.exports = routes;

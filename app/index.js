@@ -44,7 +44,7 @@ var ProfileName = React.createClass({
 var Avatar = React.createClass({
     render: function() {
         return (
-            <div>
+            <div className="row">
                 <h2>React First Page</h2>
                 <ProfilePic imageUrl={this.props.user.image} />
                 <ProfileLink username={this.props.user.username} />

@@ -9,13 +9,14 @@ var Link = require('react-router').Link;
 var UserDetails = require('./UserDetail');
 var MainContainer = require('./MainContainer');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
+var Loading = require('./Loading');
 
 function puke(object) {
     return <pre>{JSON.stringify(object, null, ' ')}</pre>
 }
 function ConfirmBattle(props) {
     return props.isLoading === true
-        ? <p>Loading</p>
+        ? <Loading speed={500} text="Wait one moment"/>
         :   <MainContainer>
                 <h1>Confirm Players</h1>
                 <div className='col-sm-8 col-sm-offset-2'>

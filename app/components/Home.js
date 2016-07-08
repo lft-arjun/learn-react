@@ -1,5 +1,6 @@
 var React = require('react');
 var ReactRouter = require('react-router');
+var MainContainer = require('./MainContainer');
 var Link = ReactRouter.Link;
 
 var Home = React.createClass({

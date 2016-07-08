@@ -7,6 +7,7 @@ var PropTypes  = React.PropTypes;
 var styles = require('../styles');
 var UserDetails = require('./UserDetail');
 var MainContainer = require('./MainContainer');
+var Loading = require('./Loading');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
 var Link = require('react-router').Link;
 
@@ -21,7 +22,7 @@ function Results(props) {
 
     if( props.isLoading === true) {
         return(
-            <p>Loading</p>
+            <Loading text="One Moment" speed={200} />
         )
     }
     if (props.scores[0] === props.scores[1]) {

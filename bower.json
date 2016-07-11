@@ -1,0 +1,21 @@
+{
+  "name": "github-battle",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "arjun <arjunsunar@lftechnology.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lft-arjun/learn-react",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
